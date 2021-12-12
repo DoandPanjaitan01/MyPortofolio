@@ -1,0 +1,85 @@
+<html>
+    <head> 
+        <title> Praktikum pemrograman Web </title>
+        <h1>Selamat Datang Di Website Kami!</h1>
+        <h2>Web Ini Adalah Tutorial Pemrograman Web</h2>
+        <h3>Praktikum Pemrograman Web</h3>
+        <p> <a href="https://itpln.ac.id"> Teknik Informatika ITPLN </a> </span> link for your success way </p> 
+    
+        <img src="images/itpln.jpg" width="180" height="200" alt="photo"/> 
+    
+        <form method="POST" action="response2.jsp" enctype="multipart/form-data"></form>
+    
+        <select name="My Lab">
+        <option value=’CC’>Lab. Praktikum Computer Vision</option>
+        <option value=’SI’> Lab. Sistem Informasi </option>
+        <option value=’CAI’> Lab. Computing & AI </option> 
+        </select> 
+    
+    
+        <input type="file" name="upload" value="" width="200" />  
+        Table 
+        <table border="1" width="10"> 
+        <thead> 
+            <tr> 
+                <th>NIM</th>
+                <th>Mahasiswa</th>
+            </tr> 
+        </thead> 
+
+        <tbody> 
+            <tr> 
+                <td>123</td> 
+                <td>Andi Sambodo</td> 
+            </tr> 
+            <tr> 
+                <td>124</td> 
+                <td>Budi Susilo</td> 
+            </tr> 
+        </tbody> 
+    </table>  
+
+    Bidang Minat: 
+    <ol> 
+        <li>Sistem Informasi <ul> 
+            <li>Data Warehousing </li> 
+            <li>Enterprise Architecture </li> </ul> </li> 
+            <li>Multimedia <ul> 
+            <li>Komputer Grafik </li> 
+            <li>Machinema </li> </ul> </li>  
+    </ol>    
+    </head>
+    
+    <body>
+        
+    </body>   
+</html>
+<html> <!--Tag pembuka untuk membuat dokumen HTML (bagian pembuka)-->
+    <head> <!--untuk memberikan informasi tentang dokumen tersebu (bagian pembukanya)-->
+        <title>Form HTML-Doand panjaitan</title><!--Untuk membuat judul pada dokumen HTML -->
+        <h1>FORM HTML-Doand Panjaitan</h1><!--akan menampilkan tulisan judul "FORM HTML_Doand Panjaitan" dengan tulisan paling besa-->
+        <body><!--Untuk mendefinisikan body/isi dokumen HTML, berfungsi untuk menentukan bagaimana isi suatu dokumen ditampilkan di web browsernya. Isi dokumen tersebut dapat berupa teks, gambar, animas, link dan seterusnya (bagian pembukanya)-->
+            <form action="submit.php" method="POST"><!--tag form akan Membuat formulir untuk mengumpulkan input pengguna dan terdapat dua atribut yaitu: Atribut action diisi dengan lokasi script yang digunakan untuk memproses data pada server. Contohnya pada kode HTML di atas, kita memerintahkan file submit.php untuk memproses data yang dikirimkan dari form. Atribut method berfungsi untuk menentukan metode form yang digunakan. Metode yang biasa digunakan adalah POST dan GET. Metode POST datanya tidak tampak. Sedangkan GET datanya tampak atau kelihatan di URL dan yang saya gunakan adalah method Post-->
+                <p>Name: <input type="text" name="name" /></p><!--pada tag input ini kita akan memasukkan data dan pada terdapat dua atribut yaitu Type="text" berarti kita menambahkan kolom isian berupa teks. Isi type harus sesuai dengan tipe yang ada, bukan sembarang isian. dan Atribut name="username" berarti variable yang dikirimkan nantinya adalah “username”. Isi name adalah bebas sesuai keinginan kita menamai data dengan nama apa.-->
+	            <p>Gender: <!--tag p akan membuat paragraf baru yang menampilakn gender-->
+                    <input type="radio" name="Gender" value="pria"> Man
+                    <input type="radio" name="Gender" value="wanita"> Woman</p> 
+                    <!--Penjelasan: Kedua field di atas menggunakan atribut type=”radio”. Dengan name yang sama yaitu “Gender” menandakan kedua field tersebut untuk mengisinya harus memilih salah satu (user hanya dapat memilih man atau woman, tidak bisa kedua-duanya).-->
+ 	            <p><label>Country:</label><!--Untuk mendefinisikan label untuk sebuah elemen <input>, seperti "Country"-->
+                    <select name="Country"><!--Tag select digunakan untuk membuat objek form yang berupa list pilihan yang dapat dipilih oleh user. Atribut name inilah yang akan menjadi varibel penampung nilai yang dipilih oleh user.-->
+                        <option value="indonesia">Indonesia</option>
+                        <option value="inggris uk">English UK</option>
+                        <option value="jepang">Jepang</option>
+                        <option value="batak">Batak</option>
+                        <!--Penjelasan : untuk memberi nilai value berupa nilai yang singkat namun bermakna sesuai dengan pilihan yang ditampilkan. pada value diatas terdapat 4 value yang akan ditampilakn pada halaman web nanti-->
+                    </select></p>
+	            <p>Addres:<input type="text" name="addres" /></p><!--Type text digunakan untuk membuat field untuk teks biasa. Tidak ada pembatasan huruf jadi dapat diisi angka, huruf dan karakter. Contoh untuk menanyakan username.-->
+	            <p>E-mail:<input type="email" name="email" /></p><!--Type email untuk membuat field kusus email. Saat user mengisinya dengan teks yang bukan email address maka akan muncul warning.-->
+	            <p>Photo:<input type="file" name="photo"  /><br/></p><!--type file untuk membuat form upload file. Tampilan field ini berupa tombol jika di-klik maka akan menampilkan file browser untuk memilih file mana yang akan diupload.-->
+	            <p><label>Comment:</label><textarea></textarea><!--untuk tag textarea akan membuat text inputan yang bisa menampung lebih dari 1 baris inputan yang akan ditampilkan pda halaman web kita nanti. -->
+                    <input type="submit" name="submit" value="submit" /></p><!--Type submit digunakan untuk membuat tombol kirim. Ini adalah tipe input yang wajib digunakan saat membuat sebuah form. Jika tombol ini di-klik user maka form akan diproses oleh file yang sudah ditentukan di atribut action pada tag <form>.-->
+                <h3><p align="center">Form Registrasi</p></h3><!--align untuk membuat teks yang akan ditampilakn menjadi rata tengah dengan ukuran teks h3-->
+            </form><!---->
+        </body><!--Mendefinisikan body/isi dokumen HTML, berfungsi untuk menentukan bagaimana isi suatu dokumen ditampilkan di web browsernya. Isi dokumen tersebut dapat berupa teks, gambar, animas, link dan seterusnya (bagian penutupnya)-->
+    </head><!--untuk memberikan informasi tentang dokumen tersebu (bagian penutupnya)-->
+</html><!--Tag penutup untuk membuat dokumen HTML (bagian penutup)-->
